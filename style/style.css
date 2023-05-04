@@ -1,0 +1,232 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+:root{
+    --colorTextPrimary:#FFFFFF;
+    --colorTextSecondary:#C0C0C0;
+    --colorBtn:#167BF7;
+    --colorBottom:#00030C;
+    --fontPrimary:'Inter', sans-serif;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: var(--colorBottom);
+    color: var(--colorTextPrimary);
+    font-family: var(--fontPrimary);
+    font-weight: 400;
+    
+}
+
+
+.homeContet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 0px;
+    gap: 20px;
+    
+}
+.titleHome{
+    font-size: 1.2rem;
+    width: 85%;
+   
+}
+.imgHome{
+    
+    width: 280px;
+    height: 100px;
+}
+
+.BtnHome12Months{
+    text-decoration: none;
+    background-color: var(--colorBtn);
+    color: var(--colorTextPrimary);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.BtnHome1Month{
+    text-decoration: none;
+    background-color: transparent;
+    color: var(--colorTextPrimary);
+    border: 2px solid var(--colorBtn);
+    border-radius: 5px;
+    padding: 0.5rem;
+    width: 15rem;
+    text-align: center;
+    font-size: 1rem;
+}
+.caption{
+    font-size: 0.8rem;
+    color: var(--colorTextSecondary);
+    width: 90%;
+}
+.platforms{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10%;
+}
+.contet{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+    gap: 20px;
+}
+.text{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.description{
+    color: var(--colorTextSecondary);
+    font-size: 0.8rem;
+}
+/*imagens*/
+.imgPlatforms{
+    
+    width: 200px;
+    height: 200px;
+    
+}
+.imgTelas{
+    width: 250px;
+    height: 180px;
+}
+.imgNotebook{
+    width: 250px;
+    height: 150px;
+}
+.typeScreem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+}
+.typeScreemContet{
+    display: flex;
+    gap: 0px;
+}
+.screem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.titleScreem{
+    font-size: 0.5rem;
+}
+/*imagens*/
+.img{
+    width: 110px;
+    height: 60px;
+}
+footer{
+    font-size: 0.5rem;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    text-align: center;
+    padding: 10px;
+    gap: 10px;
+    background-color: #020717;
+}
+.imgLogo{
+    width: 50px;
+
+}
+
+
+
+@media (min-width: 1000px) {
+
+    .home{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        padding: 5%;
+        background-position:right;
+        background-size:cover;
+        background-image: radial-gradient(transparent 10%, var(--colorBottom) 90%, var(--colorBottom) 10%),  url("../img/Background.png");
+        align-items: center;
+        text-align: center;
+        
+    }
+    
+    .titleHome{
+        font-size: 3rem;
+    }
+    .imgHome{
+        width: 580px;
+        height: 200px;
+        margin: 2rem;
+    }
+    
+    .BtnHome12Months{
+        
+        padding: 2rem;
+        width: 55rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .BtnHome1Month{
+        
+        border: 2px solid var(--colorBtn);
+        
+        padding: 2rem;
+        width: 55rem;
+        text-align: center;
+        font-size: 1.5rem;
+    }
+    .caption{
+        font-size: 1.2rem;
+    }  
+
+    .contet{
+        flex-direction: row;
+        width: 70%;
+        gap: 20px;
+    }
+    .title{
+        font-size: 4rem;
+    }
+    .description{
+        font-size: 2rem;
+    }
+
+        /*imagens*/
+    .imgPlatforms{
+        
+        width: 1000px;
+        height: 900px;
+        
+    }
+    .imgTelas{
+        width: 900px;
+        height: 550px;
+    }
+    .imgNotebook{
+        width: 900px;
+        height: 500px;
+    }
+    .titleScreem{
+        font-size: 3rem;
+    }
+    /*imagens*/
+    .img{
+        width: 770px;
+        height: 400px;
+    }
+    footer{
+        font-size: 1.4rem;
+        padding: 2%;
+    }
+    .imgLogo{
+        width: 100px;
+    
+    }
+}
