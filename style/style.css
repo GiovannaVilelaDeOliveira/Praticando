@@ -49,6 +49,10 @@ body{
     text-align: center;
     font-size: 1rem;
 }
+.BtnHome12Months:hover{
+    background-color: #4390ed;
+    
+}
 .BtnHome1Month{
     text-decoration: none;
     background-color: transparent;
@@ -59,6 +63,9 @@ body{
     width: 15rem;
     text-align: center;
     font-size: 1rem;
+}
+.BtnHome1Month:hover{
+    background-color: #4390ed;
 }
 .caption{
     font-size: 0.8rem;
@@ -127,6 +134,7 @@ body{
     height: 60px;
 }
 footer{
+    
     font-size: 0.5rem;
     display: flex;
     flex-direction:column;
@@ -135,13 +143,28 @@ footer{
     padding: 10px;
     gap: 10px;
     background-color: #020717;
+    
 }
 .imgLogo{
     width: 50px;
 
 }
-
-
+.links{
+   display: flex;
+   gap: 20px;
+   
+}
+.link{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--colorTextPrimary);
+}
+.link:hover{
+    color: #167BF7;
+}
+.link:active{
+    color: #08438b;
+}
 
 @media (min-width: 1000px) {
 
